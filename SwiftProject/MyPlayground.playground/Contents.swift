@@ -93,7 +93,10 @@ print("the status code is \(http200Status.statusCode)")
 //Optional 
 
 
-let possibleNumber  = "123"//let possibleNumber  = "123" convertedNumber nil
+let possibleNumber  = "123"
+
+//let possibleNumber  = "hello" convertedNumber nil
+//let possibleNumber  = "hello"
 
 let  convertedNumber = Int(possibleNumber)
 
@@ -107,9 +110,72 @@ if convertedNumber != nil{
 
 print("\(convertedNumber)")
 
-
-
 //Optional binding
+
+if let actualNumber  = Int(possibleNumber) {
+    print("\(possibleNumber) has an integer value pf \(actualNumber)")
+}else {
+    print("\(possibleNumber) could not be converted to an integer")
+}
+
+
+
+var a :String
+
+a  = "hello"
+
+var b  = Int(a)
+
+if b == nil {
+    print("nil")
+}else{
+    print("\(b)")
+}
+
+
+let unusualMenagerie  = "Koala 🐨,Snail 🐌,Penguin 🐧,Dromedary 🐫"
+
+
+print("unusualMenagerie has \(unusualMenagerie.characters.count) characters")
+
+
+let strValue1 = "床前明月光，疑是地上霜"
+for c in strValue1.characters
+{
+    print(c)
+}
+print("字数是:\(strValue1.characters.count)")
+
+
+let multiplier = 3
+
+let message = "\(multiplier) times 2.5 is \(Double(multiplier)*2.5)"
+
+//var someInts = Int[1,2]()
+//
+//print("someInts is pf type Int[] with \(someInts.count) items.")
+
+
+var shoppingList: [String] = ["Eggs", "Milk"]
+
+shoppingList.append("chicken")
+
+var threeDoubles = Array.init(count:3,repeatedValue:3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
